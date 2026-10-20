@@ -1,0 +1,47 @@
+Package: hestia
+Title: Bayesian Compartmental Infection Models from Individual Outcomes
+Version: 0.1.0
+Authors@R: 
+    c(person("Claire Perrin", "Smith", email = "clairesmith6995@gmail.com",
+             role = c("aut", "cre"),
+             comment = c(ORCID = "0000-0003-1069-9460")),
+      person("Jack", "Goodall", email = "jackwgoodall@hotmail.com",
+             role = "aut"))
+Description: Fit Bayesian compartmental infection models (such as
+    susceptible-infected-recovered and multi-compartment hidden Markov
+    variants) from individual-level outcome data. Models are composed
+    from infection-process and observation-process components and fit
+    using Stan via 'rstan'.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en-US
+Biarch: true
+Depends: R (>= 4.1.0)
+Imports: checkmate, dplyr, flexstanr (>= 0.2.0), methods, posterior,
+        Rcpp (>= 0.12.0), RcppParallel (>= 5.0.1), rstan (>= 2.18.1),
+        rstantools (>= 2.5.0), stats, tidyr
+LinkingTo: BH (>= 1.66.0), Rcpp (>= 0.12.0), RcppEigen (>= 0.3.3.3.0),
+        RcppParallel (>= 5.0.1), rstan (>= 2.18.1), StanHeaders (>=
+        2.18.0)
+SystemRequirements: GNU make
+Suggests: bayesplot, ggplot2, knitr, lintr, patchwork, pkgload,
+        rmarkdown, roxygen2, roxyglobals, spelling, testthat (>=
+        3.0.0), withr
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://accidda.github.io/hestia/,
+        https://github.com/ACCIDDA/hestia
+BugReports: https://github.com/ACCIDDA/hestia/issues
+LazyData: true
+LazyDataCompression: xz
+Config/roxyglobals/filename: globals.R
+Config/roxyglobals/unique: FALSE
+Config/roxygen2/version: 8.1.0
+NeedsCompilation: yes
+Packaged: 2026-10-08 15:02:04 UTC; runner
+Author: Claire Perrin Smith [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1069-9460>),
+  Jack Goodall [aut]
+Maintainer: Claire Perrin Smith <clairesmith6995@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-10-20 15:00:02 UTC
